@@ -3,7 +3,7 @@
 The desktop session is out of credits. Everything that needs the laptop, Contabo, BTP, AWS or Chrome has been done. What remains can be done from this repo alone.
 
 ## 0. What the cloud session can and cannot do
-Earlier cloud sessions had NO access to the laptop, BAS, Contabo, AWS, GCP, BTP, Chrome tools or `cf`. Assume the same. You work from this private GitHub repo (`YuvarajAravindan-AI-Agent/sap-sox-itgc-agent`, folder `demo/`) or from a zip the user uploads (`~/Videos/sox-demo-bundle.zip` on the laptop). Do not ask for secrets and never print any. Do not try to reach the deployed apps.
+Earlier cloud sessions had NO access to the laptop, BAS, Contabo, AWS, GCP, BTP, Chrome tools or `cf`. Assume the same. You work from this private GitHub repo (`novantsys-pvt-ltd/sap-sox-itgc-agent`, folder `demo/`) or from a zip the user uploads (`~/Videos/sox-demo-bundle.zip` on the laptop). Do not ask for secrets and never print any. Do not try to reach the deployed apps.
 
 ## 1. The job
 1. **Render the demo video** from `demo/` (storyboard `demo/content.py`, images `demo/screens/`, narration `demo/audio/*.wav`, durations `demo/audio/durations.json`) in the look below. Target 1920x1080, H.264 + AAC, about 5 to 6 minutes, and a LinkedIn copy of at most about 9.8 MB (check the current LinkedIn size limit; the last upload was 9.82 MB).
@@ -50,10 +50,10 @@ hook > problem > earlier phases (summary) > phase 3 > live AC-01 > live JE and C
 4. Update memory notes for this project (`sox-itgc-agent-project`).
 
 ## 7. Where everything lives
-- Repos (all private, account YuvarajAravindan-AI-Agent): `sap-sox-itgc-agent` (this), `sap-gov-sandbox` (phases 1-2 service + `DEPLOY.md` + saved audit export), `sap-gov-agent`, `sap-gov-ledger`, `sap-agents-video` and `sap-agents-video-part2` (earlier video renderers: PIL scene renderer + TTS + ffmpeg; reuse their ideas, not their look).
+- Repos (all private, org novantsys-pvt-ltd): `sap-sox-itgc-agent` (this), `sap-gov-sandbox` (phases 1-2 service + `DEPLOY.md` + saved audit export), `sap-gov-agent`, `sap-gov-ledger`, `sap-agents-video` and `sap-agents-video-part2` (earlier video renderers: PIL scene renderer + TTS + ffmpeg; reuse their ideas, not their look).
 - BTP trial: org 06407a50trial / space dev, us10-001; apps `sap-sox-itgc-agent-srv`, `sox-itgc-agent` (chat), the three phase-1/2 apps (stopped); HANA `govsandbox` (free tier stops nightly); destinations GovStockService, GovLedgerService, SoxControlService. Trial ends about mid-January 2027.
 - Model: Gemini `gemini-3.8-flash` through the Enterprises `vertex-gateway` (Cloud Run); the token is in `~/.config/vertex-gateway/token` on the laptop. The old key in `.bashrc` is dead.
 - Secrets are never in repos. Never print `.env` or tokens.
 
 ## 8. Prompt to paste into the cloud session
-> You are continuing a task for Yuvaraj. Read `HANDOFF-cloud-session-demo.md` and `demo/PHASES.md` in the private repo `YuvarajAravindan-AI-Agent/sap-sox-itgc-agent` (or in the uploaded zip). Render the demo video described there from `demo/content.py`, `demo/screens/` and `demo/audio/` in the `audit-workpaper-tickmark-binder` look, following every rule in section 2 and the facts in section 4. Deliver `sox-demo.mp4` (1920x1080) and a LinkedIn copy under about 9.8 MB, polish `demo/linkedin-post.txt` without changing numbers, and report what you changed. If ffmpeg or Pillow is missing, say so and give a render spec instead. Do not ask for secrets, and do not claim anything that is not in the hand-off files.
+> You are continuing a task for Yuvaraj. Read `HANDOFF-cloud-session-demo.md` and `demo/PHASES.md` in the private repo `novantsys-pvt-ltd/sap-sox-itgc-agent` (or in the uploaded zip). Render the demo video described there from `demo/content.py`, `demo/screens/` and `demo/audio/` in the `audit-workpaper-tickmark-binder` look, following every rule in section 2 and the facts in section 4. Deliver `sox-demo.mp4` (1920x1080) and a LinkedIn copy under about 9.8 MB, polish `demo/linkedin-post.txt` without changing numbers, and report what you changed. If ffmpeg or Pillow is missing, say so and give a render spec instead. Do not ask for secrets, and do not claim anything that is not in the hand-off files.

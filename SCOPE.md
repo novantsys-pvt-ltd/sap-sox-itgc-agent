@@ -82,4 +82,4 @@ Progress: days 1-9 done 2026-10-19 (controls, cross-checks, audited service, sig
 ## 10. Open decisions for Yuvaraj
 1. Confirm the three controls for release 1, or swap one.
 2. Gemini first for the agent LLM (recommended) or Bedrock Nova.
-3. New private repo `sap-sox-itgc-agent` on the YuvarajAravindan-AI-Agent account (this folder), forking code from `sap-gov-sandbox`.
+3. New private repo `sap-sox-itgc-agent` in the novantsys-pvt-ltd org (this folder), forking code from `sap-gov-sandbox`.
